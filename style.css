@@ -50,7 +50,7 @@ a {
 
 a:visited {
 	text-decoration:none;
-	color: #700;
+	color: rgb(55, 12, 124);
 }
 
 a:hover {

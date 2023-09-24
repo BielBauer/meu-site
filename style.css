@@ -2,6 +2,7 @@ body {
 	font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
 	color: #3b3b3b;
 	padding-left: 25px;
+	background-color: #fffff8;
 }
 
 h1,h2,h3 {
@@ -14,6 +15,7 @@ h1 {
 	background-color: #23294d;
 	color: #ddd;
 	padding-left: 15px;
+	margin-left: 160px;
 }
 
 h2 {
@@ -69,10 +71,6 @@ a:hover {
 	padding: 0;
 }
 
-#menu .ativo {
-	background-color: #ddd;
-}
-
 .vcard {
 	padding: 5px;
 }
@@ -113,8 +111,16 @@ nav {
 	color: blue;
 	font-size: 20px;
 	margin-left: 15px;
+	margin-top: -22px;
 }
 
 footer {
 	font-size: 85%;
+}
+
+img {
+    float: left;
+    padding: 0px;
+    margin: 0px 10px 10px 0;
+    max-width: 150px;
 }

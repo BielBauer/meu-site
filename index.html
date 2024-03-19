@@ -13,18 +13,29 @@
         <div>
             <img src="foto-gabriel.jpeg">
             <h1>GABRIEL DE AGUIAR BATISTA</h1>
-            <h3 style="font-size: 120%; margin-top: -15px;">🎒 Estudante de Análise e Desenvolvimento de Sistemas e Advogado <br>
-            👨 32 anos <br>
-            📍 São Caetano do Sul/SP</h3>
+            <h3>🎒 Estudante de Análise e Desenvolvimento de Sistemas <br>
+                💼 Advogado <br>
+                👨 33 anos <br>
+                📍 São Caetano do Sul/SP </div></h3>
         </div>
 
     </header>
 
-    <nav>
-        <a href="#contatos">📱 Contatos</a> &nbsp;
-    </nav>
+    <!-- Side navigation -->
+    <div class="sidenav">
+        <a href="#perfil">Perfil Pessoal</a>
+        <a href="#objetivo">Objetivo Profissional</a>
+        <a href="#formação">Formação</a>
+        <a href="#experiências">Experiências Profissionais</a>
+        <a href="#certificações">Certificações</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#cases">Cases de Sucesso</a>
+        <a href="#contatos">Contatos</a>
+    </div>
+    
+    <!-- Page content -->
 
-    <h2>Perfil Pessoal</h2>
+    <h2 id="perfil">Perfil Pessoal</h2>
 
     <ul>
         <li>Sou estudante de Análise e Desenvolvimento de Sistemas, advogado, e possuo mais de 11 anos de experiência em funções
@@ -38,96 +49,114 @@
             sempre buscando crescer profissionalmente e aprimorar minhas habilidades.</li>
     </ul>
 
-    <h2> Objetivo Profissional</h2>
+    <h2 id="objetivo">Objetivo Profissional</h2>
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Almejo migrar de carreira e ampliar meus conhecimentos e estou em busca de uma oportunidade de estágio em empresas do setor privado.
     Meu interesse e paixão pela tecnologia são acompanhados pela vontade de aprender, crescer e contribuir de forma efetiva.
     Estou ansioso para aplicar meus conhecimentos e colaborar no desenvolvimento de soluções inovadoras que impulsionem o sucesso da empresa nesta área em constante evolução.
 
-    <h2>Formação</h2>
+    <h2 id="formação">Formação</h2>
     
-    <b>UNIVERSIDADE MUNICIPAL DE SÃO CAETANO DO SUL - USCS</b>
-    <ul>
-    <li>Graduação Tecnológica em Análise e Desenvolvimento de Sistemas</li>
-    <li>2022 - Em andamento (prev. dez/2024)</li>
-    </ul>  
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Graduação')">Graduação</button>
+        <button class="tablinks" onclick="openCity(event, 'Pós-Graduação')">Pós-Graduação</button>
+    </div>
     
-    <b>UNIVERSIDADE CATÓLICA DE BRASÍLIA - UCB</b>
-    <ul>
-    <li>Graduação Bacharelada em Direito</li>
-    <li>2017 - Concluído</li>
-    </ul>
+    <div id="Graduação" class="tabcontent">
+        <h3>UNIVERSIDADE MUNICIPAL DE SÃO CAETANO DO SUL</h3>
+        <ul>
+            <li>Graduação Tecnológica em Análise e Desenvolvimento de Sistemas</li>
+            <li>2022 - Em andamento (prev. dez/2024)</li>
+        </ul>  
     
-    <b>CENTRO UNIVERSITÁRIO ICESP</b>
-    <ul>
-    <li>Especialização <i>Latu Sensu</i> em Direito Público</li>
-    <li>2020 - Concluído</li>
-    </ul>
-    
-    <b>INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE BRASÍLIA - IFB</b>
-    <ul>
-    <li>Graduação Tecnológica em Gestão Pública</li>
-    <li>2022 - Interrompido</li>
-    </ul>
+        <h3>UNIVERSIDADE CATÓLICA DE BRASÍLIA</h3>
+        <ul>
+            <li>Graduação Bacharelada em Direito</li>
+            <li>2017 - Concluído</li>
+        </ul>
 
-    <h2>Experiências Profissionais</h2>
+        <h3>INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE BRASÍLIA</h3>
+        <ul>
+            <li>Graduação Tecnológica em Gestão Pública</li>
+            <li>2022 - Interrompido</li>
+        </ul>
+    </div>
 
-    <b>ADVOGADO ASSOCIADO</b><br>
-    <b>Sá & Cardoso Advogados Associados</b><br>
-    <b>2023 - Atualmente</b>
+    <div id="Pós-Graduação" class="tabcontent">
+        <h3>CENTRO UNIVERSITÁRIO ICESP</h3>
+        <ul>
+            <li>Especialização <i>Latu Sensu</i> em Direito Público</li>
+            <li>2020 - Concluído</li>
+        </ul>
+    </div>
 
-    <ul>
-        <li>Atuação predominante na área Cível.</li>
-        <li>Elaboração de peças processuais e representação em fases recursais.</li>
-        <li>Habilidade em identificar e solucionar questões complexas.</li>
-        <li>Foco em obter o melhor resultado para os clientes.</li>
-    </ul>
+    <h2 id="experiências">Experiências Profissionais</h2>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'São Paulo')">São Paulo</button>
+        <button class="tablinks" onclick="openCity(event, 'Brasília')">Brasília</button>
+    </div>
+
+    <div id="São Paulo" class="tabcontent">
+        <h3>ADVOGADO ASSOCIADO</h3>
+        <b>&nbsp;&nbsp;&nbsp;Sá & Cardoso Advogados Associados</b>
+        </br>
+        <b>&nbsp;&nbsp;&nbsp;2023 - 2023</b>
+        <ul>
+            <li>Atuação predominante na área Cível.</li>
+            <li>Elaboração de peças processuais e representação em fases recursais.</li>
+            <li>Habilidade em identificar e solucionar questões complexas.</li>
+            <li>Foco em obter o melhor resultado para os clientes.</li>
+        </ul> 
+    </div>
+
+    <div id="Brasília" class="tabcontent">
+        <h3>ANALISTA DE RELAÇÕES INSTITUCIONAIS</h3>
+        <b>&nbsp;&nbsp;&nbsp;Instituto de Gestão Estratégica de Saúde do Distrito Federal</b>
+        </br>
+        <b>&nbsp;&nbsp;&nbsp;2020 - 2021</b>
+        <ul>
+            <li>Experiência em elaboração de documentos e gestão de processos administrativos.</li>
+            <li>Gerenciamento de sistemas de proposição de projetos para captação de recursos públicos.</li>
+            <li>Celebração de convênios que somaram mais de R$ 7 milhões.</li>
+            <li>Contribuição para otimização dos fluxos de trabalho e comunicação entre as áreas do Instituto.</li>
+        </ul>
    
-    <b>ANALISTA DE RELAÇÕES INSTITUCIONAIS</b><br>
-    <b>Instituto de Gestão Estratégica de Saúde do Distrito Federal</b><br>
-    <b>2020 - 2021</b>
+        <h3>ASSESSOR DE GABINETE</h3>
+        <b>&nbsp;&nbsp;&nbsp;Secretaria de Estado de Saúde do Distrito Federal</b>
+        </br>
+        <b>&nbsp;&nbsp;&nbsp;2020 - 2020</b>
+        <ul>
+            <li>Elaboração de documentos estratégicos e gerenciamento de processos administrativos.</li>
+            <li>Facilitação da comunicação entre a Chefe de Gabinete e outros departamentos.</li>
+            <li>Dedicação a atividades relacionadas à emergência da COVID-19.</li>
+            <li>Colaboração na tomada de decisões precisas através da coleta e análise de informações relevantes.</li>
+        </ul>
 
-    <ul>
-        <li>Experiência em elaboração de documentos e gestão de processos administrativos.</li>
-        <li>Gerenciamento de sistemas de proposição de projetos para captação de recursos públicos.</li>
-        <li>Celebração de convênios que somaram mais de R$ 7 milhões.</li>
-        <li>Contribuição para otimização dos fluxos de trabalho e comunicação entre as áreas do Instituto.</li>
-    </ul>
+        <h3>HOST COPA DAS CONFEDERAÇÕES FIFA 2013 E COPA DO MUNDO FIFA 2014</h3>
+        <b>&nbsp;&nbsp;&nbsp;Oi S.A. - Temporário</b>
+        </br>
+        <b>&nbsp;&nbsp;&nbsp;2013 - 2014</b>
+        <ul>
+            <li>Atendimento ao cliente como parte da equipe de recepção.</li>
+            <li>Apoio e assistência do patrocinador oficial em jogos oficiais.</li>
+            <li>Habilidade em lidar com pessoas e oferecer soluções eficientes.</li>
+            <li>Garantia de uma experiência positiva e amigável para os clientes antes, durante e após os jogos.</li>
+        </ul>
 
-    <b>ASSESSOR DE GABINETE</b><br>
-    <b>Secretaria de Estado de Saúde do Distrito Federal</b><br>
-    <b>2020 - 2020</b>
+        <h3>COORDENADOR DO ESCRITÓRIO DE REPRESENTAÇÃO EM BRASÍLIA E OUTROS</h3>
+        <b>&nbsp;&nbsp;&nbsp;Prefeitura de Manaus</b>
+        </br>
+        <b>&nbsp;&nbsp;&nbsp;2009 - 2020</b>
+        <ul>
+            <li>Gestão de pessoas, administração financeira, contratos e convênios.</li>
+            <li>Coordenação de diferentes departamentos do Escritório de Representação.</li>
+            <li>Apoio logístico a servidores em missões importantes na Capital Federal.</li>
+            <li>Assessoria ao Prefeito no relacionamento com parlamentares, entidades do Governo Federal e organismos executores de programas prioritários do Município.</li>
+        </ul>
+    </div>
 
-    <ul>
-        <li>Elaboração de documentos estratégicos e gerenciamento de processos administrativos.</li>
-        <li>Facilitação da comunicação entre a Chefe de Gabinete e outros departamentos.</li>
-        <li>Dedicação a atividades relacionadas à emergência da COVID-19.</li>
-        <li>Colaboração na tomada de decisões precisas através da coleta e análise de informações relevantes.</li>
-    </ul>
-
-    <b>HOST COPA DAS CONFEDERAÇÕES FIFA 2013 E COPA DO MUNDO FIFA 2014</b><br>
-    <b>Oi S.A. - Temporário</b><br>
-    <b>2013 - 2014</b>
-
-    <ul>
-        <li>Atendimento ao cliente como parte da equipe de recepção.</li>
-        <li>Apoio e assistência do patrocinador oficial em jogos oficiais.</li>
-        <li>Habilidade em lidar com pessoas e oferecer soluções eficientes.</li>
-        <li>Garantia de uma experiência positiva e amigável para os clientes antes, durante e após os jogos.</li>
-    </ul>
-
-    <b>COORDENADOR DO ESCRITÓRIO DE REPRESENTAÇÃO EM BRASÍLIA E OUTROS</b><br>
-    <b>Prefeitura de Manaus</b><br>
-    <b>2009 - 2020</b>
-
-    <ul>
-        <li>Gestão de pessoas, administração financeira, contratos e convênios.</li>
-        <li>Coordenação de diferentes departamentos do Escritório de Representação.</li>
-        <li>Apoio logístico a servidores em missões importantes na Capital Federal.</li>
-        <li>Assessoria ao Prefeito no relacionamento com parlamentares, entidades do Governo Federal e organismos executores de programas prioritários do Município.</li>
-    </ul>
-
-    <h2>Certificações</h2>
+    <h2 id="certificações">Certificações</h2>
 
     <ul>
         <li>Modelagem de Dados (2023);
@@ -142,7 +171,7 @@
         <li>Membro do Centro Acadêmico de Direito da Universidade Católica de Brasília - (2016).</li>
     </ul>
 
-    <h2>Habilidades</h2>
+    <h2 id="habilidades">Habilidades</h2>
 
     <ul>
         <li>Inglês avançado (Nível C1).</li>
@@ -159,7 +188,7 @@
         <li>Facilidade com o uso de ferramentas online de organização e criação, como Canva.</li>
     </ul>
 
-    <h2><i>Cases</i> de Sucesso</h2>
+    <h2 id="cases"><i>Cases</i> de Sucesso</h2>
 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Com experiência em gerenciamento de recursos financeiros e operações administrativas, contribuí para a otimização de processos em órgãos públicos de Brasília.
     
@@ -172,15 +201,13 @@
     positivos para as organizações onde atuei.
     </ul>
    
-    <hr>
-
     <h2 id="contatos">Contatos</h2>
     
     <h3>Acesse as redes e entre em contato pelos meios abaixo:</h3>
 
     <!-- Whatsapp -->
 
-    &nbsp;&nbsp;&nbsp;<a href = "https://api.whatsapp.com/send?phone=5511943940143"><img
+    <a href = "https://api.whatsapp.com/send?phone=5511943940143"><img
     src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>  
     
     <!-- Telegram -->
@@ -215,7 +242,9 @@
 
 <footer>
     &nbsp;Obrigado pela visita! Aguardo seu contato!<br>
-    &nbsp;Copyright &copy; 2023. Feito por mim mesmo com amor e dedicação.
+    &nbsp;© 2023-2024. Feito por mim com dedicação e empenho.
 </footer>
+
+<script src="app.js"></script>
 
 </html>

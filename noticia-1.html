@@ -3,51 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <title>Governo Lança Novo Programa de Educação Digital</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 15px;
-    }
-    h1 {
-      margin-bottom: 15px;
-      color: #23294d;
-    }
-    img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
-    p {
-      line-height: 1.6;
-      font-size: 18px;
-      color: #333;
-    }
-    a.voltar {
-      display: inline-block;
-      margin-top: 30px;
-      color: #23294d;
-      text-decoration: none;
-      font-weight: bold;
-      border: 1px solid #23294d;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    a.voltar:hover {
-      background-color: #23294d;
-      color: white;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="noticias.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Governo Lança Novo Programa de Educação Digital</h1>
-    <img src="img/noticia-1.jpg" alt="Educação Digital" />
-    <p>O governo federal anunciou um novo programa de educação digital que visa capacitar jovens para o mercado de trabalho com foco em tecnologia e inovação. O projeto inclui cursos gratuitos, laboratórios de tecnologia e parcerias com empresas do setor para oferecer estágios e oportunidades reais.</p>
-    <p>Segundo autoridades, a iniciativa busca reduzir o déficit de profissionais qualificados e impulsionar o desenvolvimento tecnológico do país. O programa terá início ainda neste ano, contemplando escolas públicas de todo o Brasil.</p>
-    <a href="noticias.html" class="voltar">← Voltar para notícias</a>
-  </div>
+
+  <!-- Sidebar fixa -->
+  <nav class="sidenav">
+    <h2>Portal</h2>
+    <a href="noticias.html">Início</a>
+    <a href="#">Brasil</a>
+    <a href="#">Política</a>
+    <a href="#">Economia</a>
+    <a href="#">Educação</a>
+    <a href="#">Tecnologia</a>
+    <a href="#">Cultura</a>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header class="header-top">Notícia</header>
+  <div class="spacer-header"></div>
+
+  <!-- Conteúdo principal -->
+  <main class="main">
+    <div class="noticia-container">
+      <h1>Governo Lança Novo Programa de Educação Digital</h1>
+      <div class="meta">Publicado em 20/05/2025 | Por Redação</div>
+      <img src="img/noticia-1.jpg" alt="Estudantes em laboratório digital" />
+
+      <p><strong>Iniciativa federal pretende formar até 500 mil jovens até 2026, com foco em tecnologia, inovação e empregabilidade.</strong></p>
+
+      <p>O governo federal anunciou nesta terça-feira (20) o lançamento do programa “Brasil Digital: Educação para o Futuro”, que visa capacitar jovens de escolas públicas com competências digitais voltadas ao mercado de trabalho. A iniciativa contempla cursos gratuitos, laboratórios de tecnologia e parcerias com empresas para fomentar estágios e inserção profissional.</p>
+
+      <p>“Nosso objetivo é transformar o conhecimento digital em uma ponte para oportunidades reais. Estamos investindo não apenas em infraestrutura, mas em futuro”, declarou a ministra da Educação Digital, Mariana Alves, durante a cerimônia de lançamento em Brasília.</p>
+
+      <p>Segundo o governo, o programa será implementado em fases, com prioridade para regiões com baixos índices de conectividade. A primeira etapa, prevista para começar ainda este ano, atenderá mais de 2 mil escolas em todo o país.</p>
+
+      <p>Além dos cursos de programação, robótica e habilidades digitais, o projeto prevê a criação de espaços maker dentro das escolas, onde os alunos poderão aplicar os conhecimentos na prática.</p>
+
+      <p>Especialistas da área de tecnologia e educação consideram a medida estratégica. “Faltam profissionais qualificados, e essa lacuna precisa ser preenchida desde a base educacional”, explica João Freitas, pesquisador do Instituto Brasileiro de Tecnologia Educacional (IBTE).</p>
+
+      <p>O portal oficial do programa deve ser lançado nos próximos dias, com detalhes sobre as inscrições, cronograma e requisitos para participação.</p>
+
+      <a href="noticias.html" class="voltar">← Voltar para notícias</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Portal de Notícias - Todos os direitos reservados</footer>
+
 </body>
 </html>

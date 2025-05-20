@@ -6,13 +6,13 @@
 }
 
 body {
-  font: 16px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;
-  color: #3b3b3b;
-  background-color: #fffff8;
+  font: 16px "Segoe UI", "Trebuchet MS", sans-serif;
+  color: #2c2c2c;
+  background-color: #f9f9f9;
+  line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-smooth: antialiased;
 }
 
 /* Sidebar */
@@ -25,7 +25,6 @@ body {
   background-color: #23294d;
   padding-top: 20px;
   overflow-y: auto;
-  transition: transform 0.3s ease;
   z-index: 1000;
 }
 
@@ -35,40 +34,42 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   font-size: 1.5rem;
-  user-select: none;
 }
 
 .sidenav a {
   display: block;
   padding: 12px 20px;
-  font-size: 1.15rem;
+  font-size: 1rem;
   color: #ddd;
   text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s, color 0.2s;
 }
-
 .sidenav a:hover,
 .sidenav a:focus {
-  color: #ffd900;
+  color: #ffd700;
   background-color: rgba(255, 217, 0, 0.15);
-  outline: none;
-  cursor: pointer;
 }
 
-/* Botão para abrir/fechar sidebar em telas pequenas */
-.sidebar-toggle {
-  display: none;
+/* Cabeçalho fixo */
+.header-top {
   position: fixed;
-  top: 15px;
-  left: 15px;
-  background-color: #23294d;
-  border: none;
+  top: 0;
+  left: 185px;
+  right: 0;
+  height: 60px;
+  background-color: #1e1e1e;
   color: #fff;
-  padding: 10px 12px;
-  font-size: 1.3rem;
-  cursor: pointer;
-  z-index: 1100;
-  border-radius: 4px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  z-index: 900;
+}
+
+/* Espaçamento abaixo do header fixo */
+.spacer-header {
+  height: 60px;
 }
 
 /* Conteúdo principal */
@@ -80,107 +81,70 @@ body {
   min-height: 100vh;
 }
 
-/* Cabeçalho */
-.header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #23294d;
-  color: white;
-  padding: 15px;
-  margin-left: 185px;
-  transition: margin-left 0.3s ease;
-}
-
-.header-top h1 {
-  margin: 0;
-  font-size: 1.8rem;
-}
-
-.header-top input[type="text"] {
-  padding: 8px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: none;
-  max-width: 250px;
-}
-
-/* Notícias */
+/* Container da notícia */
 .noticia-container {
-  padding-top: 20px;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
-.destaque {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #eee;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+.noticia-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #1e1e1e;
 }
 
-.destaque img {
-  max-width: 100%;
+.noticia-container .meta {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.noticia-container img {
+  width: 100%;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  object-fit: cover;
 }
 
-.grid-noticias {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card-noticia {
-  background-color: #fdfdfd;
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
-  transition: box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.card-noticia:hover,
-.card-noticia:focus-within {
-  box-shadow: 4px 4px 10px rgba(0,0,0,0.12);
-  outline: none;
-}
-
-.card-noticia h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 700;
-  color: #23294d;
+.noticia-container p {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 /* Rodapé */
 footer {
   text-align: center;
-  margin-top: 40px;
-  font-size: 85%;
+  font-size: 0.85rem;
+  color: #888;
   padding: 20px 0;
-  border-top: 1px solid #ccc;
-  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
 }
 
-/* Responsividade */
-@media screen and (max-width: 768px) {
+/* Responsivo */
+@media (max-width: 768px) {
   .sidenav {
-    transform: translateX(-100%);
-    width: 250px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
   }
 
-  .sidenav.active {
-    transform: translateX(0);
-  }
-
-  .sidebar-toggle {
-    display: block;
+  .header-top {
+    left: 0;
+    padding-left: 10px;
+    font-size: 1.3rem;
+    justify-content: center;
   }
 
   .main {
@@ -188,28 +152,7 @@ footer {
     padding: 15px;
   }
 
-  .header-top {
-    margin-left: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+  .noticia-container {
+    padding: 20px 10px;
   }
-
-  .header-top input[type="text"] {
-    max-width: 100%;
-    width: 100%;
-  }
-}
-
-/* Pequenas melhorias para teclado e acessibilidade */
-.card-noticia a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-}
-
-.card-noticia a:focus,
-.card-noticia a:hover {
-  outline: none;
-  text-decoration: underline;
 }

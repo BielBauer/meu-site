@@ -2,70 +2,53 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Descoberta Científica Revoluciona Tratamento de Doenças Raras</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Estilos específicos para a página de notícia destaque */
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 15px;
-    }
-    h1 {
-      color: #23294d;
-      margin-bottom: 15px;
-      font-size: 2rem;
-      font-weight: 700;
-    }
-    .imagem-destaque {
-      width: 100%;
-      max-width: 900px;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    p {
-      font-size: 1.125rem;
-      line-height: 1.6;
-      color: #3b3b3b;
-    }
-    a.voltar {
-      display: inline-block;
-      margin-top: 25px;
-      text-decoration: none;
-      color: #23294d;
-      font-weight: 600;
-      border: 2px solid #23294d;
-      padding: 8px 16px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-    a.voltar:hover,
-    a.voltar:focus {
-      background-color: #23294d;
-      color: #fff;
-      outline: none;
-    }
-
-    @media screen and (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="noticias.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Descoberta Científica Revoluciona Tratamento de Doenças Raras</h1>
-    <img src="img/imagem-destaque.jpg" alt="Imagem ilustrativa de descoberta científica" class="imagem-destaque" />
-    <p>Pesquisadores brasileiros fazem avanço histórico que pode mudar a vida de milhões de pessoas ao redor do mundo.</p>
 
-    <a href="noticias.html" class="voltar" aria-label="Voltar para página de notícias">← Voltar para notícias</a>
-  </div>
+  <nav class="sidenav">
+    <h2>Portal</h2>
+    <a href="noticias.html">Início</a>
+    <a href="#">Brasil</a>
+    <a href="#">Política</a>
+    <a href="#">Economia</a>
+    <a href="#">Educação</a>
+    <a href="#">Tecnologia</a>
+    <a href="#">Cultura</a>
+  </nav>
+
+  <header class="header-top">Notícia</header>
+  <div class="spacer-header"></div>
+
+  <main class="main">
+    <div class="noticia-container">
+      <h1>Descoberta Científica Revoluciona Tratamento de Doenças Raras</h1>
+      <div class="meta">Publicado em 20/05/2025 | Por Redação</div>
+      <img src="img/imagem-destaque.jpg" alt="Cientista analisando amostras em laboratório" />
+
+      <p><strong>Pesquisadores brasileiros desenvolvem terapia genética inovadora que pode beneficiar milhões de pessoas ao redor do mundo.</strong></p>
+
+      <p>Uma equipe de cientistas da Universidade Federal de São Paulo (Unifesp) anunciou nesta segunda-feira (19) uma descoberta promissora no campo da medicina genética. A pesquisa, que vinha sendo conduzida há mais de cinco anos, resultou em uma terapia inédita capaz de corrigir mutações causadoras de doenças raras de origem hereditária.</p>
+
+      <p>A inovação utiliza tecnologia de edição genética por CRISPR-Cas9, permitindo a correção precisa de genes defeituosos em células humanas. O tratamento já foi testado com sucesso em modelos animais e agora segue para testes clínicos em humanos, após aprovação da Anvisa e com apoio do Ministério da Saúde.</p>
+
+      <p>“Estamos diante de um marco para a medicina brasileira e mundial. Essa terapia representa esperança para milhares de famílias que lutam contra doenças sem tratamento eficaz até hoje”, destacou a coordenadora do estudo, Dra. Helena Moreira.</p>
+
+      <p>Estima-se que mais de 13 milhões de brasileiros convivam com alguma condição rara, muitas vezes sem diagnóstico ou assistência adequada. A nova abordagem poderá ser aplicada, inicialmente, a três dessas enfermidades, incluindo a distrofia muscular de Duchenne e a síndrome de Rett.</p>
+
+      <p>Organizações internacionais de saúde aplaudiram a iniciativa e destacaram o potencial de exportação da tecnologia. O Brasil pode se tornar uma referência global em terapias genéticas nos próximos anos.</p>
+
+      <p>Além do impacto médico, a descoberta reacende o debate sobre financiamento à pesquisa científica no país. O projeto só avançou graças a parcerias entre universidades, setor privado e agências internacionais.</p>
+
+      <p>“Esse é um exemplo claro do que a ciência nacional é capaz de fazer quando há investimento e apoio. O futuro da saúde passa por laboratórios como este”, afirmou o ministro da Ciência e Tecnologia, Eduardo Lima.</p>
+
+      <a href="noticias.html" class="voltar">← Voltar para notícias</a>
+    </div>
+  </main>
+
+  <footer>© 2025 Portal de Notícias - Todos os direitos reservados</footer>
+
 </body>
 </html>
